@@ -6,7 +6,12 @@
 
 
 #Setting up 
-####run the following commands in order
+####tech stack used
+* Python 3.8
+* Django web framework
+
+####run the following commands inside a virtual environment in the given order
+* pip install -r requirements.txt
 * python manage.py makemigrations
 * python manage.py migrate
 * python manage.py runserver
