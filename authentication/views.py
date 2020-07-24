@@ -5,8 +5,10 @@ from django.contrib import messages, auth
 
 
 def login(request):
+    # to stop a logged in user to login again
     if not request.user.is_authenticated:
         if request.method == 'POST':
+            # handling login process
             if request.POST['email'] and request.POST['password']:
                 try:
                     user = User.objects.get(email=request.POST['email'])
@@ -25,12 +27,11 @@ def login(request):
         return redirect('/')
 
 
-
-
-
 def signup(request):
+    # to not allow a logged in user to register
     if not request.user.is_authenticated:
         if request.method == 'POST':
+            # handling signup
             if request.POST['password'] == request.POST['password2']:
                 if request.POST['username'] and request.POST['email'] and request.POST['password']:
                     try:

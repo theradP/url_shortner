@@ -20,3 +20,24 @@
 * select whether the url being created is for single use or not 
 * Click the generate button and share the generated URL
 * after the created link is used refresh the dashboard page to update the visits
+
+###URLs
+####login/
+* leads to the login page 
+
+####signup/
+* leads to the signup page
+
+####logout/
+* logs out user and redirects to the login page 
+
+####dashboard/
+* can only be accessed by a logged in user
+* leads to the short url creation form 
+
+####generate/
+  
+* generates the short url based on the user inputs or randomly as required by the user
+* redirects to the dashboard after generating the shortURL 
+* updates the dashboard with the list of urls generated 
+
