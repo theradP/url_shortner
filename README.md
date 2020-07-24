@@ -46,3 +46,6 @@
 * redirects to the dashboard after generating the shortURL 
 * updates the dashboard with the list of urls generated 
 
+##Format for Urls
+* paste urls with the protocol involved
+ex- http://www.google.com
